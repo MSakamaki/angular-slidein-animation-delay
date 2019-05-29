@@ -1,0 +1,15 @@
+<div class="box">
+	<span class="box-wapper">
+    <button mat-fab  class="trash-button"
+  *ngIf="active" @deleteButtonAnimation >削除</button>
+    <button mat-fab color="" 
+    (click)="active = false"
+  *ngIf="active" @cancelButtonAnimation> 取消 </button>
+  </span>
+  <span class="box-wapper">
+    <button mat-fab color="primary"
+    (click)="active = true"
+  *ngIf="!active" @editButtonAnimation> 編集 </button>
+  </span>
+  
+</div>

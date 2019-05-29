@@ -1,0 +1,13 @@
+.box {
+  text-align: right;
+  position: relative;
+  &-wapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+
+.trash-button {
+  margin: 0 12px;
+}
