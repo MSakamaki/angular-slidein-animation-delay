@@ -23,7 +23,7 @@ enum Delays {
      * childAnimationを使う連携方法もあったりする
      */
     /** 削除ボタン */
-    trigger('deleteButtonAnimation', [
+    trigger('delete', [
       transition(':enter', [
        useAnimation(slideInLeftAnimation, {
          params: {  delay: Delays.Third }
@@ -36,7 +36,7 @@ enum Delays {
       ])
     ]),
     /** 取消ボタン */
-    trigger('cancelButtonAnimation', [
+    trigger('cancel', [
       transition(':enter', [
        useAnimation(slideInLeftAnimation, {
          params: {  delay: Delays.Second }
@@ -49,7 +49,7 @@ enum Delays {
       ])
     ]),
     /** 編集ボタン */
-    trigger('editButtonAnimation', [
+    trigger('edit', [
       transition(':enter', [
        useAnimation(slideInLeftAnimation, {
          params: {  delay: Delays.Third }
